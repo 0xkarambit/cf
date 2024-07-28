@@ -11,7 +11,7 @@ fi
 
 contest_id="${BASH_REMATCH[1]}"
 
-echo "Fetching contest $contest_id"
+echo "fetching contest $contest_id"
 
 # Setup directory structure
 if [[ ! -d "$contest_id" ]]; then

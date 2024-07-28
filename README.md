@@ -8,7 +8,7 @@ bash script to scrape input/output from codeforces contest challenges (WIP)
 
 ```console
 karambit@0xKarambit:~/code/cf-tool$ ./cf.sh https://codeforces.com/contest/1996/
-Fetching problem 1996
+fetching contest 1996
 fetching problem A
 fetching problem B
 fetching problem C
