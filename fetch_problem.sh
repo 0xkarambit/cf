@@ -29,6 +29,10 @@ fi
 
 cd "$contest_id" || exit 1
 
+# adding a $problem_id.py
+
+touch "$problem_id.py"
+
 # filtering and writing input to `./input/$problem_id`
 echo -n "$response" |
     pup '.input > pre text{}' |
