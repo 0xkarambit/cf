@@ -31,7 +31,8 @@ cd "$contest_id" || exit 1
 
 # adding a $problem_id.py
 
-touch "$problem_id.py"
+TEMPLATE_FILE="$HOME/.config/cf/template.py"
+cp "$TEMPLATE_FILE" "$problem_id.py"
 
 # filtering and writing input to `./input/$problem_id`
 echo -n "$response" |

@@ -11,7 +11,7 @@ fi
 
 contest_id="${BASH_REMATCH[1]}"
 
-echo "Fetching problem $contest_id"
+echo "Fetching contest $contest_id"
 
 # Setup directory structure
 if [[ ! -d "$contest_id" ]]; then
@@ -46,7 +46,5 @@ contest_ids=$(
         tr -cd '[:alnum:]\n'
 )
 
-path="$(dirname "$(realpath "$0")")/fetch_problem.sh"
-
 echo -n "$contest_ids" |
-    xargs -I % bash -c "$path https://codeforces.com/contest/$contest_id/problem/%"
+    xargs -I % -P 0 bash -c "./fetch_problem.sh https://codeforces.com/contest/$contest_id/problem/%"
