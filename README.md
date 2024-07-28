@@ -2,12 +2,12 @@
 # cf
 
 bash script to scrape input/output from codeforces contest challenges (WIP)
->meh this could have just been a gist
+>meh this could have just been a gist, but this is what i decided to do instead of actually solving codeforces challenges
 
 # demo
 
 ```console
-karambit@0xKarambit:~/code/cf-tool$ ./cf.sh https://codeforces.com/contest/1996/
+karambit@0xKarambit:~/code/cf-tool$ ./cf https://codeforces.com/contest/1996/
 fetching contest 1996
 fetching problem A
 fetching problem B
@@ -53,6 +53,10 @@ karambit@0xKarambit:~/code/cf-tool$ tree 1996
     .codeforces
     template.py
 ```
+
+# Dependencies
+
+- [ pup ]( https://github.com/ericchiang/pup )
 
 ## Roadmap
 

@@ -4,7 +4,7 @@
 source ./common.sh
 
 [[ $# -eq 1 ]] || {
-    error '[USAGE]: fetch_problem.sh <codeforces_problem_url>'
+    error 'USAGE: fetch_problem.sh <codeforces_problem_url>'
     exit 1
 }
 

@@ -2,6 +2,15 @@
 
 source ./common.sh
 
+function usage() {
+    printf "Usage: cf COMMAND [args]\n"
+    printf "commands:\n"
+    printf "  pull <contest_id>         pulls all the problems in the given contest\n"
+    printf "  test/run [<problem_id>]   runs code for problem_id, if not provided runs the most recently edited problem\n"
+    printf "  submit [<problem_id>]     submits code for problem_id, if not provided submits for the most recently edited problem\n"
+    printf "  status \n"
+}
+
 # checking if provided url is a valid contest url
 URL_PATTERN="^https://codeforces\.com/contest/([0-9]{4})/?$"
 if [[ "$#" -ne 1 || ! "$1" =~ $URL_PATTERN ]]; then
